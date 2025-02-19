@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedQuiz Master 🏥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-container" id="loginContainer">
+            <h1>MedQuiz Master 🩺</h1>
+            <p class="intro-text">Test your medical knowledge with fun quizzes! 💡</p>
+            <input type="text" id="username" placeholder="Enter your name">
+            <select id="topicSelect">
+                <option value="random">🌀 Random Topics</option>
+                <option value="anatomy">🦴 Anatomy</option>
+                <option value="pharmacology">💊 Pharmacology</option>
+                <option value="pathology">🦠 Pathology</option>
+                <option value="microbiology">🔬 Microbiology</option>
+            </select>
+            <button onclick="startQuiz()">🚀 Start Quiz</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-container hidden" id="quizContainer">
+            <h2 id="questionNumber"></h2>
+            <div class="question" id="question"></div>
+            <div id="options" class="options-grid"></div>
+            <div id="score" class="score-board">Current Score: 0</div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-container hidden" id="resultContainer">
+            <h2>🎉 Quiz Complete!</h2>
+            <div id="finalScore" class="final-score"></div>
+            <div id="previousScore" class="previous-score"></div>
+            <button onclick="location.reload()">🔄 Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
