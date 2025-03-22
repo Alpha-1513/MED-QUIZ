@@ -1,5 +1,5 @@
 // Google Gemini API Key (Replace with your actual key)
-const GEMINI_API_KEY = 'AIzaSyCSjT_qOcSY-YcViZgRV3WQC8vKT-i3f28';
+const GEMINI_API_KEY = 'AIzaSyB-DMKIay_OYpYpHbBHzDaZw8TVmiWomIY';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent';
 
 // Quiz State Management
